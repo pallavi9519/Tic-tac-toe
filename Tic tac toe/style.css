@@ -1,0 +1,149 @@
+body{
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+h1{
+    font-size: 50px;
+}
+.head{
+    display: flex;
+}
+.head img{
+    width:13vw;
+    height:20vh;
+}
+.container{
+display: flex;
+}
+.box{
+    border: 2px solid black;
+    width: 13vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+}
+.player{
+    width:25vw;
+font-size:25px;
+margin:10px;
+padding: 5px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.line1{
+     width:38vw;
+    height:0.5vh;
+    background-color: red;
+    position: relative;
+     opacity:0; 
+    bottom: 59vh; 
+}.line2{
+    width:38vw;
+    height:0.5vh;
+    background-color: red;
+    position:relative;
+    opacity:0; 
+    bottom:39vh;
+    
+}.line3{
+    width:38vw;
+    height:0.5vh;
+    background-color: red;
+    position: relative;
+    opacity:0;
+    bottom:19vh ;
+    
+}
+.line4{
+    width:0.2vw;
+    height:54vh;
+    background-color: red;
+    position: relative;
+    opacity:0;
+    bottom:66vh ;
+    right:13vw ;
+}
+.line5{
+    width:0.2vw;
+    height:54vh;
+    background-color: red;
+    position: relative;
+    opacity:0;
+    bottom:120vh ;
+}
+.line6{
+    width:0.2vw;
+    height:54vh;
+    background-color: red;
+    position: relative;
+    opacity:0;
+    bottom:175vh;
+    left:13vw ;
+}
+.line7 {
+    width: 40vw; /* Ensure the line covers the diagonal */
+    height: 0.3vh; /* Thickness of the line */
+    background-color: red; /* Line color */
+    position: absolute; /* Allow free positioning */
+    top: 50%; /* Center it vertically relative to the grid */
+    left: 50%; /* Center it horizontally relative to the grid */
+    transform: translate(-50%, -50%) rotate(37.73deg); /* Align with the diagonal */
+    transform-origin: center; /* Rotate around the center */
+    opacity: 0; 
+    transition: opacity 0.3s ease; /* Smooth visibility change */
+}
+.line8 {
+    width: 40vw; /* Ensure the line covers the diagonal */
+    height: 0.3vh; /* Thickness of the line */
+    background-color: red; /* Line color */
+    position: absolute; /* Allow free positioning */
+    top: 50%; /* Center it vertically relative to the grid */
+    left: 50%; /* Center it horizontally relative to the grid */
+    transform: translate(-50%, -50%) rotate(-37.73deg); /* Align with the opposite diagonal */
+    transform-origin: center; /* Rotate around the center */
+    opacity: 0; 
+    transition: opacity 0.3s ease; /* Smooth visibility change */
+}
+.overlay {
+    position: fixed; /* Make it overlay the entire screen */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000; /* Ensure it appears above all other content */
+    color:pink;
+    font-size: 25px;
+}
+
+.overlay h2 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.overlay button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #ff5555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.overlay button:hover {
+    background-color: #ff0000;
+}
+
